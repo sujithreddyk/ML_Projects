@@ -1,0 +1,37 @@
+1. Created a Project_1 folder under ML_Projects folder
+2. Open Anaconda command prompt and go to the Project_1 folder
+3. Now write command "code ." to open the folder in VS Code
+4. Now create a conda virtual environment. Use this command in VS Code Terminal "conda create -p venv python==3.8 -y"
+5. Now activate the environment " conda activate venv/"
+6. Now clone the GitHub repository and sync the GitHub and vs code.
+	a. Initialize the Git using "git init"
+	b. Create README.md file in Project_1 folder.
+	c. Now add README.md file to git repository.
+	d. Commit the README.md file to git using "git commit -m "First README.md file commit""
+	e. Checkout the branch to Main "git branch -M main"
+	f. Sync the GitHub repository "git remote add origin https://github.com/sujithreddyk/ML_Projects.git"
+	g. To check the sync "git remote -v"
+	h. If we are pushing for the first time set git global
+		git config --global user.name "sujithreddyk"
+		git config --global user.email "ksreddykavali@gmail.com"
+	i. Now push the changes to git repo
+		git push -u origin Main
+	j. Now go to GitHub repo and create a .gitignore file and choose the template as Python
+	   This is because some of the files need not be committed to git repo so we create this file.
+	k. To make sure everything is up-to-date from our side in VS code use "git pull" command. Now .gitignore
+	   file will be visible in vs code as well.
+7. Now create Setup.py file which is responsible for creating ML applications as a package and we install and use 
+   this package. If we deploy this package in PyPi then anyone can install this package into their code.
+8. Now create src folder under Project_1 folder and create _init_.py file inside src. 
+9. create requirements.txt file which contains all the dependencies/libraries.
+10.we will get an folder automatically once we run "pip install -r requirements.txt" this is because we have linked the requiremnts.txt file with setup.py file with "-e ." in requirements.txt file.
+11.
+
+
+
+
+
+
+
+
+
